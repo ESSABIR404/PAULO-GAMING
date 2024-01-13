@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gaming</title>
+    <style>
+.overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .modal {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border-color: black;
+            text-align: center;
+            max-width: 800px;
+            
+            
+        }
+
+        .modal h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+        }
+
+        .modal ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .modal li {
+            margin-bottom: 10px;
+        }
+
+        .modal button {
+            padding: 10px 20px;
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .b{
+            background-color: red;
+            padding: 5px 10px;
+            
+            
+
+        }
+        .overlayy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modall {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.modall h2 {
+  margin-bottom: 20px;
+}
+
+.modall form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.modall label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.modall input,
+.modall textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modall .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modall button {
+  padding: 10px 20px;
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+}
+#bottom {
+            position: absolute;
+            top: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="header container" >
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="index.html"><h1><span>E</span>SSABIR <span>G</span>AMES</h1></a>
+                </div>
+                
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="../php/play.php">Play</a></li>
+                        <li><a href="#li">Liste</a></li>
+                        <li><a href="#contact" >Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <button class="b" onclick="redirectToLinklLog()">Décon</button>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>LOYALTY <span></span></h1>
+                <h1>TO ESSABIR <span></span></h1>
+                <h1>GAMES <span></span></h1>
+      
+                <button onclick="HOME()" class="cta" id="btn">PLAY</button>
+                
+            </div>
+
+        </div>
+    </section>
+    <script>
+      function HOME() {
+          window.location.href = "index.html";
+        }
+        function redirectToLinkOp() {
+          window.location.href = "../php/play.php";
+        }
+        function redirectToLinklOp() {
+          window.location.href = "../php/listeOp.php";
+        }
+        function redirectToLinkJr() {
+          window.location.href = "../php/listeJr.php";
+        }
+        function redirectToLinklLog() {
+          window.location.href = "../php/logingaming.php";
+        }
+        function redirectToLinkMs() {
+          window.location.href = "../php/listeMs.php";
+        }
+        function redirectToLinkCh() {
+          window.location.href = "../php/charge.php";
+        }
+        function redirectToLinklCh() {
+          window.location.href = "../php/listeCh.php";
+        }
+        </script>
+
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">  <span>S</span>ERVICES</h1>
+            </div>
+            <div class="service-bottom">
+            <div  class="service-item">
+            <div  class="icon"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/xbox-controller.png" alt="xbox-controller"></div>
+            <h2>Les Opération</h2>
+            <p>Ajouter Tout les operation </p>
+            <button class="btn" onclick="redirectToLinkOp()">Entrer</button>
+        </div>
+        <div class="service-item">
+            <div class="icon"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/low-price.png" alt="low-price"/></div>
+            <h2>Les Charge</h2>
+            <p>Ajouter Tout Les Charge</p>
+            <button class="btn" onclick="redirectToLinkCh()">Entrer</button>
+        </div>
+        <div class="service-item">
+            <div id="li" class="icon"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/new-year-calendar.png" alt="new-year-calendar"/></div>
+            <h2>Solde Des Jours</h2>
+            <p>Afficher la liste Solde des Jours</p>
+            <button class="btn" onclick="redirectToLinkJr()">Entrer</button>
+        </div>
+        <div class="service-item">
+            <div  class="icon"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calendar--v1.png" alt="calendar--v1"/></div>
+            <h2>Solde Des Mois</h2>
+            <p>Afficher la liste Solde des Mois</p>
+            <button class="btn" onclick="redirectToLinkMs()">Entrer</button>
+        </div>
+        <div class="service-item">
+            <div  class="icon"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/ingredients-list.png" alt="ingredients-list"/></div>
+            <h2>Les Listes</h2>
+            <p>Afficher Tout Les liste</p>
+            <div id="overlay" class="overlay">
+                <div class="modal">
+                  <h3>Choisissez une Liste</h3>
+                  <ul>
+                    <li><button onclick="redirectToLinklOp()">opération</button></li>
+                    <li><button onclick="redirectToLinklCh()">Charge </button></li>
+                    <li><button onclick="redirectToLinkJr()">Jours</button></li>
+                    <li><button onclick="redirectToLinkMs()">Mois</button></li>
+                    <li><button onclick="choiceSelected(5)">Quitter </button></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <button onclick="showModal()" class="btn">Entrer</button>
+              <script>
+                  function showModal() {
+                var overlay = document.getElementById('overlay');
+                overlay.style.display = 'flex';
+              }
+              
+              function hideModal() {
+                var overlay = document.getElementById('overlay');
+                overlay.style.display = 'none';
+              }
+              
+              function choiceSelected(choice) {
+                hideModal();
+                // Faire quelque chose avec le choix sélectionné
+                console.log('Option sélectionnée : ' + choice);
+              }
+              
+              </script>
+        </div>
+    </div>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <div class="service-top"><p class="se"><span>C</span>ONTACT</p></div>
+        <div class="contact container">
+            
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><a href="#"><img  width="50" height="50" src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"/></a></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>0521486925</h2>
+                        <h2>0548258861</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><div id="overlayy" class="overlayy">
+                        <div class="modall">
+                          <h2>Formulaire d'e-mail</h2>
+                          <form action="../php/tst.php" method="post">
+                            <label for="email">Votre e-mail :</label>
+                            <input type="email" id="email" name="txtemail" required>
+                            <label for="objet">Objet :</label>
+                            <input type="text" id="objet" name="txtobjet" required>
+                            <label for="message">Message :</label>
+                            <textarea id="message" rows="5" name="txtmessage" required></textarea>
+                            <div class="button-container">
+                              <button type="submit" name="btnenvoye">Envoyer</button>
+                              <button type="button" onclick="hideModall()">Quitter</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      
+                      <button  onclick="showModall()"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/letter-with-email-sign.png" alt="letter-with-email-sign"/></button>
+                      <script>
+                          function showModall() {
+                        var overlay = document.getElementById('overlay');
+                        overlayy.style.display = 'flex';
+                      }
+                      
+                      function hideModall() {
+                        var overlay = document.getElementById('overlay');
+                        overlayy.style.display = 'none';
+                      }
+                      
+                      function sendEmaill(event) {
+                        event.preventDefault(); // Empêche le formulaire de se soumettre
+                        // Récupérer les valeurs des champs
+                        var email = document.getElementById('email').value;
+                        var objet = document.getElementById('objet').value;
+                        var message = document.getElementById('message').value;
+                        
+                        // Envoyer l'e-mail ou effectuer toute autre action nécessaire
+                        console.log('Email :', email);
+                        console.log('Objet :', objet);
+                        console.log('Message :', message);
+                        
+                        // Fermer la boîte de dialogue
+                        hideModall();
+                      }
+                      
+                      document.querySelector('form').addEventListener('submit', sendEmail);
+                      
+                      </script></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>Essabir02yassine@gmail.com</h2>
+                        <h2>pauloga4@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><a href=""><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/order-delivered.png" alt="order-delivered"/></a></div>
+                    <div class="contact-info">
+                        <h1>Adress</h1>
+                        <h2>Maarif boulevard Roudani Rue 42 N 7</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>E</span>SSABIR <span>G</span>AMES</h1>
+        </div>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://web.facebook.com/"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt=""></a>
+            </div>
+        </div>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt=""></a>
+            </div>
+        </div>
+            <p>copyright © 2023 Essabir</p>
+        </div>
+    </section>
+</body>
+</html>
